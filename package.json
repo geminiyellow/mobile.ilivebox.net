@@ -1,0 +1,73 @@
+{
+  "name": "mobile.ilivebox.net",
+  "version": "0.0.1",
+  "description": "Life was like a box of chocolates.",
+  "author": "geminiyellow <geminiyellow@gmail.com>",
+  "license": "MIT",
+  "keywords": [
+    "ilivebox",
+    "ilivebox.net",
+    "geminiyellow"
+  ],
+  "homepage": "https://github.com/geminiyellow/mobile.ilivebox.net#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/geminiyellow/mobile.ilivebox.net.git"
+  },
+  "bugs": {
+    "url": "https://github.com/geminiyellow/mobile.ilivebox.net/issues"
+  },
+  "engines": {"node": ">=0.12"},
+  "scripts": {
+    "postinstall": "./node_modules/.bin/bower i && ./node_modules/.bin/gulp"
+  },
+  "devDependencies": {
+    "bower": "^1.4.1",
+    "browser-sync": "^2.6.4",
+    "css-loader": "^0.11.0",
+    "del": "^1.1.1",
+    "exports-loader": "^0.6.2",
+    "file-loader": "^0.8.1",
+    "fs-tools": "^0.2.11",
+    "gulp": "^3.8.11",
+    "gulp-if": "^1.2.5",
+    "gulp-jscs": "^1.6.0",
+    "gulp-jshint": "^1.10.0",
+    "gulp-notify": "^2.2.0",
+    "gulp-plumber": "^1.0.0",
+    "gulp-util": "^3.0.4",
+    "html-loader": "^0.2.3",
+    "html-webpack-plugin": "^1.2.0",
+    "istanbul": "^0.3.13",
+    "jasmine-core": "^2.2.0",
+    "jshint-stylish": "^1.0.1",
+    "jshint-summary": "^0.4.0",
+    "json-loader": "^0.5.1",
+    "karma": "^0.12.31",
+    "karma-chrome-launcher": "^0.1.8",
+    "karma-coverage": "^0.3.1",
+    "karma-jasmine": "^0.3.5",
+    "karma-phantomjs-launcher": "^0.1.4",
+    "karma-sourcemap-loader": "^0.3.4",
+    "karma-spec-reporter": "0.0.19",
+    "karma-webpack": "^1.5.0",
+    "ng-annotate-webpack-plugin": "^0.1.2",
+    "node-sass": "^2.1.1",
+    "run-sequence": "^1.0.2",
+    "sass-loader": "^0.6.0",
+    "style-loader": "^0.11.0",
+    "url-loader": "^0.5.5",
+    "webpack": "^1.8.9",
+    "webpack-dev-middleware": "^1.0.11",
+    "webpack-dev-server": "^1.8.2"
+  },
+  "dependencies": {
+    "lodash": "^3.7.0"
+  },
+  "cordovaPlugins": [
+    "org.apache.cordova.device",
+    "org.apache.cordova.console",
+    "com.ionic.keyboard"
+  ],
+  "cordovaPlatforms": []
+}
