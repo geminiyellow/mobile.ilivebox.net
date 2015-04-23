@@ -1,0 +1,7 @@
+{
+  "name": "mobile.ilivebox.net",
+  "app_id": "",
+  "gulpStartupTasks": [
+    "watch"
+  ]
+}
