@@ -5,12 +5,17 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
     <title>{%= o.htmlWebpackPlugin.options.title || o.htmlWebpackPlugin.options.pkg.name || 'Webpack App'%}</title>
+
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="cordova.js"></script>
 </head>
 <body>
-<div class="app-container"></div>
-{% for (var chunk in o.htmlWebpackPlugin.assets) { %}
-<script src="{%=o.htmlWebpackPlugin.assets[chunk]%}"></script>
-{% } %}
+
+<div class="root-container"></div>
+
+<!-- scripts block -->
+{% for (var chunk in o.htmlWebpackPlugin.assets) { %} <script src="{%=o.htmlWebpackPlugin.assets[chunk]%}"></script> {% } %}
 <!-- {%= o.htmlWebpackPlugin.options.pkg.name + ' v' + o.htmlWebpackPlugin.options.pkg.version + ' built on ' + new Date() %} -->
+
 </body>
 </html>

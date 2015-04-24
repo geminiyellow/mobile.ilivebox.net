@@ -18,9 +18,12 @@ module.exports = {
     sources: {
         js: [
             '**/*.js',
+            '!build/**',
+            '!hooks/**',
+            '!plugins/**',
+            '!platforms/**',
             '!node_modules/**',
             '!bower_components/**',
-            '!hooks/**',
             '!www/**',
             '!release/**'
         ]

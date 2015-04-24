@@ -7,7 +7,7 @@ var webpack = require('webpack');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 var NGAnnotatePlugin = require('ng-annotate-webpack-plugin');
 
-var config = require('../config');
+var base = require('../config').base;
 
 module.exports = {
 
@@ -15,11 +15,11 @@ module.exports = {
     debug: true,
 
     entry: {
-        index: path.join(config.base, 'app/index')
+        index: path.join(base, 'app/index')
     },
 
     output: {
-        path: path.join(config.base, 'www'),
+        path: path.join(base, 'www'),
         filename: '[name].js',
         chunkFilename: '[chunkhash].js'
     },
@@ -66,9 +66,9 @@ module.exports = {
 
     resolve: {
         root: [
-            path.join(__dirname, 'app'),
-            path.join(__dirname, 'bower_components'),
-            path.join(__dirname, 'node_modules')
+            path.join(base, 'app'),
+            path.join(base, 'bower_components'),
+            path.join(base, 'node_modules')
         ],
         moduleDirectories: [
             'bower_components',
@@ -91,7 +91,7 @@ module.exports = {
         }),
         new webpack.optimize.DedupePlugin(),
         new HtmlWebpackPlugin({
-            pkg: require(path.join(config.base, 'package.json')),
+            pkg: require(path.join(base, 'package.json')),
             template: 'app/entry-template.html'
         })
         // new webpack.optimize.UglifyJsPlugin({
