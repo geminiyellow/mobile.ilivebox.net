@@ -26,6 +26,9 @@ module.exports = {
             '!bower_components/**',
             '!www/**',
             '!release/**'
+        ],
+        i18n: [
+            'app/resources/i18n/**'
         ]
     }
 

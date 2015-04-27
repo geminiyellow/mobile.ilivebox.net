@@ -9,7 +9,7 @@ module.exports = function MenuProvider() {
     var menus = [];
 
     this.addMenu = function (menu) {
-        menus.push(menu)
+        menus.push(menu);
     };
 
     this.$get = function () {

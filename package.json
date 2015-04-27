@@ -17,7 +17,9 @@
   "bugs": {
     "url": "https://github.com/geminiyellow/mobile.ilivebox.net/issues"
   },
-  "engines": {"node": ">=0.12"},
+  "engines": {
+    "node": ">=0.12"
+  },
   "scripts": {
     "postinstall": "./node_modules/.bin/bower i && ./node_modules/.bin/gulp"
   },
@@ -36,6 +38,7 @@
     "gulp-notify": "^2.2.0",
     "gulp-plumber": "^1.0.0",
     "gulp-util": "^3.0.4",
+    "gulp-watch": "^4.2.4",
     "html-loader": "^0.2.3",
     "html-webpack-plugin": "^1.2.0",
     "istanbul": "^0.3.13",

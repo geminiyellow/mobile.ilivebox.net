@@ -1,0 +1,19 @@
+<ion-view>
+    <ion-nav-bar>
+        <ion-nav-buttons side="primary">
+            <button class="button back-button button-clear" ng-click="$ionicGoBack()" style="color: black">
+                <i class="icon ion-ios-arrow-back"></i>
+                {{ 'Back' | translate}}
+            </button>
+        </ion-nav-buttons>
+    </ion-nav-bar>
+
+    <ion-content scroll="true" class="has-header">
+        <ion-radio ng-repeat="language in settingsLanguageCtrl.languages"
+                   ng-value="language.code"
+                   ng-model="settingsLanguageCtrl.current"
+                   ng-change="settingsLanguageCtrl.changeLanguage(language.code)">
+            <span ng-bind="language.name"></span>
+        </ion-radio>
+    </ion-content>
+</ion-view>

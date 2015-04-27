@@ -20,7 +20,7 @@ function AboutIndexCtrl($log, $window, appVersion, _) {
 
 }
 
-AboutIndexCtrl.template = require('./index.html');
+AboutIndexCtrl.template = require('./../views/index.html');
 
 AboutIndexCtrl.resolve = {};
 

@@ -9,6 +9,7 @@ gulp.task('default', function (done) {
         'clean',
         'lint',
         'test',
+        'copy',
         'build',
         _.runCallback(done)
     );

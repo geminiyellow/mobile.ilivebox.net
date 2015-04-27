@@ -1,0 +1,19 @@
+<ion-view title="{{settingsIndexCtrl.title}}">
+
+    <ion-nav-bar>
+        <ion-nav-buttons side="left">
+            <button class="button button-clear icon ion-navicon" menu-toggle="left"></button>
+        </ion-nav-buttons>
+    </ion-nav-bar>
+
+    <ion-content scroll="true" class="has-header">
+
+        <ion-list>
+            <ion-item class="item-icon-left" ng-repeat="module in settingsIndexCtrl.modules" ui-sref="{{module}}">
+                <span ng-bind="module"></span>
+            </ion-item>
+        </ion-list>
+
+    </ion-content>
+
+</ion-view>

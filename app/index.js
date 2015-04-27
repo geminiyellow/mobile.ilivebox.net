@@ -8,6 +8,7 @@ var ilivebox = module.exports = angular
     [
         require('./common').name,
         require('./about').name,
+        require('./settings').name,
         require('./main').name
     ])
     .run(function ($log) {
