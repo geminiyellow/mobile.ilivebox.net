@@ -7,6 +7,7 @@ module.exports = angular
     .module('ilivebox.main', [
         require('../common/libs').name
     ])
+
     .constant('appVersion', require('../../package.json').version)
 
     .constant('config', {
