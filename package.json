@@ -17,7 +17,10 @@
   "bugs": {
     "url": "https://github.com/geminiyellow/mobile.ilivebox.net/issues"
   },
-  "scripts": {},
+  "engines": {"node": ">=0.12"},
+  "scripts": {
+    "postinstall": "./node_modules/.bin/bower i && ./node_modules/.bin/gulp"
+  },
   "devDependencies": {
     "bower": "^1.4.1",
     "browser-sync": "^2.6.4",
