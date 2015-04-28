@@ -8,7 +8,9 @@ module.exports = angular
         require('../common/libs').name
     ])
 
-    .config(function ($stateProvider) {
+    .config(function ($stateProvider, $menuProvider) {
+
+        $menuProvider.addMenu({url: 'about.index', title: 'About'});
 
         $stateProvider
             .state('about', {

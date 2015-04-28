@@ -3,4 +3,5 @@
 var angular = require('angular');
 
 module.exports = angular
-    .module('common.ui', []);
+    .module('common.ui', [])
+    .provider('$menu', require('./menu/$menuProvider'));

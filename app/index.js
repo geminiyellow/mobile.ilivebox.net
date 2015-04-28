@@ -7,7 +7,6 @@ var ilivebox = module.exports = angular
     .module('ilivebox',
     [
         require('./common').name,
-        require('./menu').name,
         require('./about').name,
         require('./main').name
     ])

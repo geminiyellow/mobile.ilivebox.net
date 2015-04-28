@@ -1,7 +1,7 @@
 'use strict';
 
 var angular = require('angular');
-var Root = require('./directives/rootContainer');
+var RootContainer = require('./directives/rootContainer');
 
 module.exports = angular
     .module('ilivebox.main', [
@@ -18,7 +18,7 @@ module.exports = angular
         hrefWhitelist: /^\s*(https?|ftp|mailto|file|tel):/
     })
 
-    .directive('rootContainer', Root)
+    .directive('rootContainer', RootContainer)
 
     .config(function ($compileProvider, $urlRouterProvider, config) {
         // set anchor href whitelist
