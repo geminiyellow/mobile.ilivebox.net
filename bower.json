@@ -2,6 +2,10 @@
   "name": "mobile.ilivebox.net",
   "private": "true",
   "devDependencies": {
-    "ionic": "driftyco/ionic-bower#1.0.0-rc.4"
+    "ionic": "driftyco/ionic-bower#~1.0.0-rc.4"
+  },
+  "dependencies": {
+    "satellizer": "~0.10.1",
+    "ngCordova": "~0.1.15-alpha"
   }
 }
