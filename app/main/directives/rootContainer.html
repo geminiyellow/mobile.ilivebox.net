@@ -21,10 +21,7 @@
         <!-- menu content -->
         <ion-content>
             <ion-list>
-                <!--<ion-item menu-close ui-sref='about.index'>About</ion-item>-->
-                <ion-item menu-close="true" ng-repeat="menu in rootIndexCtrl.menus" ui-sref="{{menu.url}}">
-                    <span ng-bind="menu.title"></span>
-                </ion-item>
+                <ion-item menu-close ui-sref='about.index'>About</ion-item>
             </ion-list>
         </ion-content>
     </ion-side-menu>
