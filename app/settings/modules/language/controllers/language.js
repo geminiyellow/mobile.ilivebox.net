@@ -6,7 +6,7 @@ function SettingsLanguageCtrl($log, $translate, languages) {
 
     vm.languages = languages;
 
-    vm.current = $translate.storageKey();
+    vm.current = $translate.use();
 
     vm.changeLanguage = function (code) {
         $translate.use(code);
