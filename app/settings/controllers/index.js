@@ -1,15 +1,12 @@
 'use strict';
 
-var moduleLanguage = require('../modules/language');
-var moduleAccount = require('../modules/account');
-
-function SettingsIndexCtrl($log, $translate, modules) {
+function SettingsIndexCtrl(modules) {
 
     var vm = this;
 
     vm.title = 'Settings';
 
-    vm.modules = modules;
+    vm.mods = modules;
 }
 
 SettingsIndexCtrl.template = require('./../views/index.html');
@@ -17,8 +14,8 @@ SettingsIndexCtrl.template = require('./../views/index.html');
 SettingsIndexCtrl.resolve = {
     modules: function () {
         return [
-            moduleLanguage.name,
-            moduleAccount.name
+            require('../modules/language/package.json'),
+            require('../modules/account/package.json')
         ];
     }
 };

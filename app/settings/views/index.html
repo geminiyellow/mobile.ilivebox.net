@@ -9,8 +9,9 @@
     <ion-content scroll="true" class="has-header">
 
         <ion-list>
-            <ion-item class="item-icon-left" ng-repeat="module in settingsIndexCtrl.modules" ui-sref="{{module}}">
-                <span ng-bind="module"></span>
+            <ion-item class="item-icon-left item-icon-right" ng-repeat="module in settingsIndexCtrl.mods" ui-sref="{{module.url}}">
+                <span>{{ module.title | translate}}</span>
+                <i class="icon ion-chevron-right icon-accessory"></i>
             </ion-item>
         </ion-list>
 

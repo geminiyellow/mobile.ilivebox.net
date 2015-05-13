@@ -1,7 +1,15 @@
 {
   "Menu": "菜单",
   "Back": "返回",
-  "Settings": "设置",
+  "Settings": {
+    "Title": "设置",
+    "Account": {
+      "Title": "帐号管理"
+    },
+    "Language": {
+      "Title": "语言选择"
+    }
+  },
   "About": "关于",
   "Account": "帐号"
 }

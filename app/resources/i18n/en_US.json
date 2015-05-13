@@ -1,7 +1,15 @@
 {
   "Menu": "Menu",
   "Back": "Back",
-  "Settings": "Settings",
+  "Settings": {
+    "Title": "Settings",
+    "Account": {
+      "Title": "Account"
+    },
+    "Language": {
+      "Title": "Language"
+    }
+  },
   "About": "About",
   "Account": "Account"
 }

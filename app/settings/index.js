@@ -2,7 +2,11 @@
 
 var angular = require('angular');
 var SettingsIndexCtrl = require('./controllers/index');
-var modules = SettingsIndexCtrl.resolve.modules().concat([require('../common/libs').name]);
+var modules = [
+    require('../common/libs').name,
+    require('./modules/language').name,
+    require('./modules/account').name
+];
 
 module.exports = angular
     .module('ilivebox.settings', modules)
