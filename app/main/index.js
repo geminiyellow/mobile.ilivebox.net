@@ -1,7 +1,8 @@
 'use strict';
 
 var angular = require('angular');
-var RootContainer = require('./directives/rootContainer');
+var RootContainer = require('./container/rootContainer');
+var SideMenu = require('./sidemenu/sideMenu');
 
 module.exports = angular
     .module('ilivebox.main', [
@@ -18,6 +19,7 @@ module.exports = angular
         hrefWhitelist: /^\s*(https?|ftp|mailto|file|tel):/
     })
 
+    .directive('sideMenu', SideMenu)
     .directive('rootContainer', RootContainer)
 
     .config(function ($compileProvider, $urlRouterProvider, config) {

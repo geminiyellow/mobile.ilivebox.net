@@ -1,6 +1,6 @@
 'use strict';
 
-var RootIndexCtrl = require('./../controllers/index');
+var RootIndexCtrl = require('./rootController');
 
 module.exports = function RootContainer() {
     return {
